@@ -1,5 +1,6 @@
 import * as Unicons from "@iconscout/react-unicons";
 import prefil from "./images/perfil.png";
+
 const Home = () => {
   return (
     <section className="home section" id="home">
@@ -14,14 +15,14 @@ const Home = () => {
               <Unicons.UilLinkedin className="nav__icon" />
             </a>
             <a
-              href="https://dribbble.com/"
+              href="https://www.dribbble.com/"
               target="blank"
               className="home__social-icon"
             >
               <Unicons.UilDribbble className="nav__icon" />
             </a>
             <a
-              href="https://github.com/"
+              href="https://www.github.com/"
               target="blank"
               className="home__social-icon"
             >

@@ -27,7 +27,7 @@ const Header = () => {
   }
 
   const linkAction = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     navMenu.classList.remove("show-menu");
   };
 
@@ -49,6 +49,15 @@ const Header = () => {
     }, 100);
   }, []);
 
+  // const scrollHeader = (e) => {
+  //   const nav = document.getElementById("header");
+  //   if (nav) {
+  //     if (this.scrollY > 80) nav.classList.add("scroll-header");
+  //     else nav.classList.remove("scroll-header");
+  //   }
+  // };
+  // window.addEventListener("scroll", scrollHeader);
+
   return (
     <header className="header" id="header">
       <nav className="nav container">
@@ -63,37 +72,41 @@ const Header = () => {
         <div className="nav__menu" id="nav-menu">
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a href="/" className="nav__link">
+              <a href="#home" className="nav__link active-link">
                 <Unicons.UilEstate className="nav__icon" />
                 Home
               </a>
+
+              {/* <a href="#contact" className="button button--flex">
+                Contact Me <Unicons.UilMessage className="button__icon uil" />
+              </a> */}
             </li>
             <li className="nav__item">
-              <a href="/" className="nav__link">
+              <a href="#about" className="nav__link">
                 <Unicons.UilUser className="nav__icon" />
                 About
               </a>
             </li>
             <li className="nav__item">
-              <a href="/" className="nav__link">
+              <a href="#skills" className="nav__link">
                 <Unicons.UilFileAlt className="nav__icon" />
                 Skills
               </a>
             </li>
             <li className="nav__item">
-              <a href="/" className="nav__link">
+              <a href="#services" className="nav__link">
                 <Unicons.UilBriefcaseAlt className="nav__icon" />
                 Sevices
               </a>
             </li>
             <li className="nav__item">
-              <a href="/" className="nav__link">
+              <a href="#portfolio" className="nav__link">
                 <Unicons.UilScenery className="nav__icon" />
                 Portfolio
               </a>
             </li>
             <li className="nav__item">
-              <a href="/" className="nav__link">
+              <a href="#contact" className="nav__link">
                 <Unicons.UilMessage className="nav__icon" />
                 Contact
               </a>
