@@ -23,8 +23,8 @@ SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 const Portfolio = () => {
   return (
     <section className="portfolio section" id="portfolio">
-      <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My Introduction</span>
+      <h2 className="section__title">Portfolio</h2>
+      <span className="section__subtitle">My Projects</span>
 
       <div className="portfolio__container container">
         <Swiper

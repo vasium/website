@@ -36,18 +36,33 @@ const Header = () => {
       element.addEventListener("click", linkAction);
     });
   }
+  const [themeButton, setthemeButton] = useState(null);
 
-  const [textField, setTextField] = useState(null);
+  const [textField, setTextField] = useState("");
+
   const currentElementIdContent = " evzonic ";
+
   useEffect(() => {
-    let i = 0;
-    setInterval(() => {
-      if (i < currentElementIdContent.length) {
+    var i = 0;
+    var id = setInterval(() => {
+      if (i === currentElementIdContent.length) {
+        clearInterval(id);
+      } else {
+        setthemeButton(document.getElementById("theme-button"));
         const text = currentElementIdContent.slice(0, i++);
         text !== currentElementIdContent && setTextField(text);
       }
     }, 100);
   }, []);
+
+  // let i = 0;
+  // if (i < currentElementIdContent.length) {
+  //   console.log(e);
+  //   setInterval((e) => {
+  //     const text = currentElementIdContent.slice(0, i++);
+  //     text !== currentElementIdContent && setTextField(text);
+  //   }, 100);
+  // }
 
   // const scrollHeader = (e) => {
   //   const nav = document.getElementById("header");
@@ -57,6 +72,48 @@ const Header = () => {
   //   }
   // };
   // window.addEventListener("scroll", scrollHeader);
+
+  // const themeButton = document.getElementById("theme-button");
+
+  const selectedTheme = localStorage.getItem("selected-theme");
+  // const selectedIcon = localStorage.getItem("selected-icon");
+
+  // useEffect(() => {
+  //   setthemeButton(document.getElementById("theme-button"));
+  // }, []);
+
+  if (themeButton) {
+    console.log("theme", themeButton);
+    const getCurrentTheme = () =>
+      document.body.classList.contains("dark-theme") ? "dark" : "light";
+
+    // const getCurrentIcon = () =>
+    //   themeButton.classList.contains("uil-sun") ? "uil-moon" : "uil-sun";
+
+    if (selectedTheme) {
+      document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+        "dark-theme"
+      );
+
+      //   if (selectedIcon === "uil-moon") {
+      //     themeButton.classList.add("uil-sun");
+      //     themeButton.classList.remove("uil-moon");
+      //   } else if (selectedIcon === "uil-sun") {
+      //     themeButton.classList.add("uil-moon");
+      //     themeButton.classList.remove("uil-sun");
+      //   }
+    }
+
+    themeButton.addEventListener("click", () => {
+      var para = document.createElement("p");
+
+      document.getElementById("lll").appendChild(para);
+      document.body.classList.toggle("dark-theme");
+      // themeButton.classList.toggle("uil-moon");
+      localStorage.setItem("selected-theme", getCurrentTheme());
+      // localStorage.setItem("selected-icon", getCurrentIcon());
+    });
+  }
 
   return (
     <header className="header" id="header">
@@ -115,6 +172,13 @@ const Header = () => {
           <Unicons.UilTimes className="nav__close" id="nav-close" />
         </div>
         <div className="nav__btns">
+          {/* Theme change button */}
+          <div id="lll">
+            <Unicons.UilMoon
+              className="change-theme uil-moon"
+              id="theme-button"
+            />
+          </div>
           <div className="nav__toggle" id="nav-toggle">
             <Unicons.UilApps />
           </div>

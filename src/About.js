@@ -36,7 +36,7 @@ const About = () => {
               </span>
             </div>
           </div>
-          <div className="about__buttons">
+          <div className="about__button">
             <a
               download=""
               href="images/CV.jpeg"

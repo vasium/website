@@ -33,21 +33,21 @@ const Footer = () => {
               target="blank"
               className="footer__social"
             >
-              <Unicons.UilFacebook className="nav__icon" />
+              <Unicons.UilFacebook />
             </a>
             <a
               href="https://www.instagram.com/"
               target="blank"
               className="footer__social"
             >
-              <Unicons.UilInstagram className="nav__icon" />
+              <Unicons.UilInstagram />
             </a>
             <a
               href="https://www.twitter.com/"
               target="blank"
               className="footer__social"
             >
-              <Unicons.UilTwitterAlt className="nav__icon" />
+              <Unicons.UilTwitterAlt />
             </a>
           </div>
         </div>

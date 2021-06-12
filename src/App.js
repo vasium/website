@@ -32,10 +32,6 @@ function App() {
           const test1 = document.querySelector(
             ".nav__menu a[href*=" + sectionId + "]"
           );
-          console.log(sectionHeight);
-          console.log(sectionTop);
-          console.log(sectionId);
-          console.log(".nav__menu a[href*=" + sectionId + "]");
           if (test1) {
             test1.classList.add("active-link");
           }

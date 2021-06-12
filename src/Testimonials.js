@@ -26,6 +26,14 @@ const Testimonials = () => {
       <div className="testimonials__container container">
         <Swiper
           loop={true}
+          slidesPerView={1}
+          spaceBetween={50}
+          breakpoints={{
+            // when window width is >= 568px
+            568: {
+              slidesPerView: 2,
+            },
+          }}
           pagination={{
             clickable: true,
             dynamicBullets: true,

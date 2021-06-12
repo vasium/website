@@ -61,7 +61,7 @@ const Qualifications = () => {
             id="education"
           >
             {/* ---QUALIFICATION 1  --- */}
-            <div className="qualifications__data">
+            <div className="qualifications__data qualifications__data-left">
               <div>
                 <h3 className="qualifications__title">XR Developer</h3>
                 <span className="qualifications__subtitle">Nackademin</span>
@@ -77,7 +77,7 @@ const Qualifications = () => {
             </div>
 
             {/* ---QUALIFICATION 2  --- */}
-            <div className="qualifications__data">
+            <div className="qualifications__data qualifications__data-right">
               <div></div>
 
               <div>
@@ -96,7 +96,7 @@ const Qualifications = () => {
             </div>
 
             {/* ---QUALIFICATION 3  --- */}
-            <div className="qualifications__data">
+            <div className="qualifications__data qualifications__data-left">
               <div>
                 <h3 className="qualifications__title">
                   Theoretical and Mathematical Physics
@@ -116,7 +116,7 @@ const Qualifications = () => {
             </div>
 
             {/* ---QUALIFICATION 4  --- */}
-            <div className="qualifications__data">
+            <div className="qualifications__data qualifications__data-right">
               <div></div>
 
               <div>
@@ -140,9 +140,9 @@ const Qualifications = () => {
           </div>
 
           {/* ---QUALIFICATIONS CONTENT 2--- */}
-          <div className="qualifications__content" data-content id="work">
+          <div className="qualifications__content " data-content id="work">
             {/* ---QUALIFICATION 1  --- */}
-            <div className="qualifications__data">
+            <div className="qualifications__data qualifications__data-left">
               <div>
                 <h3 className="qualifications__title">Web Developer</h3>
                 <span className="qualifications__subtitle">Freelancer</span>
@@ -158,7 +158,7 @@ const Qualifications = () => {
             </div>
 
             {/* ---QUALIFICATION 2  --- */}
-            <div className="qualifications__data">
+            <div className="qualifications__data qualifications__data-right">
               <div></div>
 
               <div>
@@ -177,7 +177,7 @@ const Qualifications = () => {
             </div>
 
             {/* ---QUALIFICATION 3  --- */}
-            <div className="qualifications__data">
+            <div className="qualifications__data qualifications__data-left">
               <div>
                 <h3 className="qualifications__title">XR Developer</h3>
                 <span className="qualifications__subtitle">

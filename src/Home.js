@@ -12,21 +12,21 @@ const Home = () => {
               target="blank"
               className="home__social-icon"
             >
-              <Unicons.UilLinkedin className="nav__icon" />
+              <Unicons.UilLinkedin />
             </a>
             <a
               href="https://www.dribbble.com/"
               target="blank"
               className="home__social-icon"
             >
-              <Unicons.UilDribbble className="nav__icon" />
+              <Unicons.UilDribbble />
             </a>
             <a
               href="https://www.github.com/"
               target="blank"
               className="home__social-icon"
             >
-              <Unicons.UilGithub className="nav__icon" />
+              <Unicons.UilGithub />
             </a>
           </div>
 
@@ -73,7 +73,7 @@ const Home = () => {
         </div>
 
         <div className="home__scroll">
-          <a href="@about" className="home__scroll-button button--flex">
+          <a href="#about" className="home__scroll-button button--flex">
             <Unicons.UilMouseAlt className="home__scroll-mouse uil" />
             <span className="home__scroll-name">Scroll down</span>
             <Unicons.UilArrowDown className="home__scroll-arrow uil" />
