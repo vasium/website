@@ -12,6 +12,11 @@ import Scroll from "./Scroll";
 import Services from "./Services";
 import Skills from "./Skills";
 import Testimonials from "./Testimonials";
+import styled from "styled-components";
+
+const Section1Styled = styled.div``;
+
+const Section2Styled = styled.div``;
 
 function App() {
   const [sections, setSections] = useState(null);
@@ -63,8 +68,13 @@ function App() {
     <>
       <Header />
       <Main>
-        <Home />
-        <About />
+        <Section1Styled id="section1">
+          <Home />
+        </Section1Styled>
+        <Section2Styled id="section2">
+          <About />
+        </Section2Styled>
+
         <Skills />
         <Qualifications />
         <Services />

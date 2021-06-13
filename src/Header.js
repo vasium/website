@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import * as Unicons from "@iconscout/react-unicons";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [navMenu, setnavMenu] = useState(null);
@@ -40,7 +41,7 @@ const Header = () => {
 
   const [textField, setTextField] = useState("");
 
-  const currentElementIdContent = " evzonic ";
+  const currentElementIdContent = " Vasilis Zotikas ";
 
   useEffect(() => {
     var i = 0;
@@ -130,9 +131,21 @@ const Header = () => {
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#home" className="nav__link active-link">
+                <Link
+                  // activeClass="active"
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  duration={100}
+                >
+                  <Unicons.UilEstate className="nav__icon" />
+                  Home
+                </Link>
+              </a>
+              {/* <a href="#home" className="nav__link active-link">
                 <Unicons.UilEstate className="nav__icon" />
                 Home
-              </a>
+              </a> */}
 
               {/* <a href="#contact" className="button button--flex">
                 Contact Me <Unicons.UilMessage className="button__icon uil" />
@@ -140,9 +153,21 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a href="#about" className="nav__link">
+                <Link
+                  // activeClass="active"
+                  to="section2"
+                  spy={true}
+                  smooth={true}
+                  duration={100}
+                >
+                  <Unicons.UilEstate className="nav__icon" />
+                  About
+                </Link>
+              </a>
+              {/* <a href="#about" className="nav__link">
                 <Unicons.UilUser className="nav__icon" />
                 About
-              </a>
+              </a> */}
             </li>
             <li className="nav__item">
               <a href="#skills" className="nav__link">
