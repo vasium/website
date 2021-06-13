@@ -14,9 +14,7 @@ import Skills from "./Skills";
 import Testimonials from "./Testimonials";
 import styled from "styled-components";
 
-const Section1Styled = styled.div``;
-
-const Section2Styled = styled.div``;
+const SectionStyled = styled.div``;
 
 function App() {
   const [sections, setSections] = useState(null);
@@ -34,16 +32,12 @@ function App() {
         const sectionId = current.getAttribute("id");
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          const test1 = document.querySelector(
-            ".nav__menu a[href*=" + sectionId + "]"
-          );
+          const test1 = document.querySelector("." + sectionId + "-id");
           if (test1) {
             test1.classList.add("active-link");
           }
         } else {
-          const test2 = document.querySelector(
-            ".nav__menu a[href*=" + sectionId + "]"
-          );
+          const test2 = document.querySelector("." + sectionId + "-id");
           if (test2) {
             test2.classList.remove("active-link");
           }
@@ -68,20 +62,35 @@ function App() {
     <>
       <Header />
       <Main>
-        <Section1Styled id="section1">
+        <SectionStyled id="section1">
           <Home />
-        </Section1Styled>
-        <Section2Styled id="section2">
-          <About />
-        </Section2Styled>
+        </SectionStyled>
 
-        <Skills />
+        <SectionStyled id="section2">
+          <About />
+        </SectionStyled>
+
+        <SectionStyled id="section3">
+          <Skills />
+        </SectionStyled>
+
         <Qualifications />
-        <Services />
-        <Portfolio />
+
+        <SectionStyled id="section4">
+          <Services />
+        </SectionStyled>
+
+        <SectionStyled id="section5">
+          <Portfolio />
+        </SectionStyled>
+
         <Project />
+
         <Testimonials />
-        <Contact />
+
+        <SectionStyled id="section6">
+          <Contact />
+        </SectionStyled>
       </Main>
       <Footer />
       <Scroll />

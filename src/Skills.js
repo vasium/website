@@ -42,7 +42,7 @@ const Skills = () => {
           <div className="skills__header">
             <Unicons.UilDatabase className="skills__icon" />
             <div>
-              <h1 className="skills__title">Frontend Developer</h1>
+              <h1 className="skills__title">Web Developer</h1>
               <span className="skills__subtitle">More than 4 years</span>
             </div>
             <Unicons.UilAngleDown className="skills__arrow" />
@@ -97,7 +97,7 @@ const Skills = () => {
           <div className="skills__header">
             <Unicons.UilServerNetwork className="skills__icon" />
             <div>
-              <h1 className="skills__title">Frontend Developer</h1>
+              <h1 className="skills__title">XR Developer</h1>
               <span className="skills__subtitle">More than 4 years</span>
             </div>
             <Unicons.UilAngleDown className="skills__arrow" />
@@ -152,7 +152,7 @@ const Skills = () => {
           <div className="skills__header">
             <Unicons.UilSwatchbook className="skills__icon" />
             <div>
-              <h1 className="skills__title">Frontend Developer</h1>
+              <h1 className="skills__title">iOS Developer</h1>
               <span className="skills__subtitle">More than 4 years</span>
             </div>
             <Unicons.UilAngleDown className="skills__arrow" />

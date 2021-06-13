@@ -1,5 +1,6 @@
 import * as Unicons from "@iconscout/react-unicons";
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 
 const Scroll = () => {
   const [scrollTop, setscrollTop] = useState(null);
@@ -20,9 +21,17 @@ const Scroll = () => {
   window.addEventListener("scroll", scrollUp);
 
   return (
-    <a href="#home" className="scrollup" id="scroll-up">
+    <Link
+      style={{ cursor: "pointer" }}
+      className="scrollup"
+      id="scroll-up"
+      to="section1"
+      spy={true}
+      smooth={true}
+      duration={500}
+    >
       <Unicons.UilArrowUp className="scrollup__icon" />
-    </a>
+    </Link>
   );
 };
 

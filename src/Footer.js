@@ -1,4 +1,5 @@
 import * as Unicons from "@iconscout/react-unicons";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -6,24 +7,50 @@ const Footer = () => {
       <div className="footer__bg">
         <div className="footer__container container grid">
           <div>
-            <h1 className="footer__title">Vasilis</h1>
-            <span className="footer__subtitle">Web | XR | iOs Developer</span>
+            <h1 className="footer__title">Vasilis Zotikas</h1>
+            {/* <span className="footer__subtitle">Web | XR | iOs Developer</span> */}
+
+            <span className="footer__subtitle">
+              Web <span className="footer__dot"></span> XR{" "}
+              <span className="footer__dot"></span> iOS Developer
+            </span>
           </div>
           <ul className="footer__links">
             <li>
-              <a href="#services" className="footer__link">
+              <Link
+                style={{ cursor: "pointer" }}
+                className="footer__link"
+                to="section4"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#portfolio" className="footer__link">
+              <Link
+                style={{ cursor: "pointer" }}
+                className="footer__link"
+                to="section5"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="footer__link">
+              <Link
+                style={{ cursor: "pointer" }}
+                className="footer__link"
+                to="section6"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
                 Contact Me
-              </a>
+              </Link>
             </li>
           </ul>
 

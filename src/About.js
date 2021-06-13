@@ -10,9 +10,12 @@ const About = () => {
         <img src={about} alt="About" className="about__img" />
         <div className="about__data">
           <p className="about__description">
-            Web, XR and iOS developer, with extensive knowledge and years of
-            experience, working in web technologies, VR/AR and iOS development,
-            delivering high quality work.
+            I’ve spent the past 12+ years working across different tech areas;
+            front-end development, UI/UX design, XR &amp; Game development, 3D
+            Architectural Visualization, iOS application development, and much
+            more. These days my time is spent freelancing, researching,
+            designing, prototyping, and coding. Attention to detail and quality
+            has always been my approach for delivering high-quality work.
           </p>
           <div className="about__info">
             <div>
@@ -30,7 +33,7 @@ const About = () => {
             </div>
 
             <div>
-              <span className="about__info-title">05+</span>
+              <span className="about__info-title">5+</span>
               <span className="about__info-name">
                 Companies <br /> worked
               </span>

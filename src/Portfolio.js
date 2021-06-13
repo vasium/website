@@ -30,7 +30,7 @@ const Portfolio = () => {
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
-          cssMode={true}
+          // cssMode={true}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}

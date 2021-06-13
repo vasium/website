@@ -1,5 +1,6 @@
 import * as Unicons from "@iconscout/react-unicons";
 import project from "./images/project.png";
+import { Link } from "react-scroll";
 
 const Project = () => {
   return (
@@ -11,10 +12,17 @@ const Project = () => {
             <p className="project__description">
               Contact me now and get 25% discount!
             </p>
-            <a href="#contact" className="button button--flex button--white">
+            <Link
+              className="button button--flex button--white"
+              style={{ cursor: "pointer" }}
+              to="section6"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               Contact Me
               <Unicons.UilMessage className="project__icon button__icon" />
-            </a>
+            </Link>
           </div>
           <img src={project} alt="Project" className="project__img" />
         </div>

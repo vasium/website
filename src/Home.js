@@ -1,6 +1,6 @@
 import * as Unicons from "@iconscout/react-unicons";
 import prefil from "./images/perfil.png";
-
+import { Link } from "react-scroll";
 const Home = () => {
   return (
     <section className="home section" id="home">
@@ -63,21 +63,39 @@ const Home = () => {
               iOS Developer
             </h3>
             <p className="home__description">
-              High level experience in Web development, XR development &amp; iOS
-              development.
+              I'm a Web, XR &amp; iOS developer passionate about creating
+              intuitive, dynamic user experiences.
             </p>
-            <a href="#contact" className="button button--flex">
+            <Link
+              style={{ cursor: "pointer" }}
+              className="button button--flex"
+              to="section6"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              {/* <a href="#contact" className="button button--flex"> */}
               Contact Me <Unicons.UilMessage className="button__icon uil" />
-            </a>
+              {/* </a> */}
+            </Link>
           </div>
         </div>
 
         <div className="home__scroll">
-          <a href="#about" className="home__scroll-button button--flex">
+          <Link
+            style={{ cursor: "pointer" }}
+            className="home__scroll-button button--flex"
+            to="section2"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            {/* <a href="#about" className="home__scroll-button button--flex"> */}
             <Unicons.UilMouseAlt className="home__scroll-mouse uil" />
             <span className="home__scroll-name">Scroll down</span>
             <Unicons.UilArrowDown className="home__scroll-arrow uil" />
-          </a>
+            {/* </a> */}
+          </Link>
         </div>
       </div>
     </section>
