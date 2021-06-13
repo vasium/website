@@ -136,7 +136,7 @@ const Header = () => {
                   to="section1"
                   spy={true}
                   smooth={true}
-                  duration={100}
+                  duration={500}
                 >
                   <Unicons.UilEstate className="nav__icon" />
                   Home
@@ -158,7 +158,7 @@ const Header = () => {
                   to="section2"
                   spy={true}
                   smooth={true}
-                  duration={100}
+                  duration={500}
                 >
                   <Unicons.UilEstate className="nav__icon" />
                   About
