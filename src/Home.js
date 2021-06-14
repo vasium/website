@@ -2,7 +2,7 @@ import * as Unicons from "@iconscout/react-unicons";
 import prefil from "./images/perfil.png";
 import { Link } from "react-scroll";
 import ReactPlayer from "react-player";
-import video from "./videos/video.mp4";
+import video from "./videos/video.m4v";
 import { useEffect, useState } from "react";
 
 const Home = () => {

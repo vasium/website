@@ -1,4 +1,3 @@
-import * as Unicons from "@iconscout/react-unicons";
 import testimonial1 from "./images/pantelis.jpg";
 import testimonial2 from "./images/george.jpg";
 import testimonial3 from "./images/simon.jpg";
