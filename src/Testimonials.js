@@ -1,7 +1,7 @@
 import * as Unicons from "@iconscout/react-unicons";
-import testimonial1 from "./images/testimonial1.jpg";
-import testimonial2 from "./images/testimonial2.jpg";
-import testimonial3 from "./images/testimonial3.jpg";
+import testimonial1 from "./images/pantelis.jpg";
+import testimonial2 from "./images/george.jpg";
+import testimonial3 from "./images/simon.jpg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,7 +22,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials section">
       <h2 className="section__title">Testimonials</h2>
-      <span className="section__subtitle">What are my clients saying</span>
+      <span className="section__subtitle">My mates</span>
       <div className="testimonials__container container">
         <Swiper
           loop={true}
@@ -51,17 +51,17 @@ const Testimonials = () => {
                       className="testimonials__img"
                     />
                     <div>
-                      <h3 className="testimonials name">Sara Smith</h3>
-                      <span className="testimonials__client">Client</span>
+                      <h3 className="testimonials name">Panteleimon Panidis</h3>
+                      <span className="testimonials__client">Associate</span>
                     </div>
                   </div>
-                  <div>
+                  {/* <div>
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
-                  </div>
+                  </div> */}
                 </div>
                 <p className="testimonials__description">
                   I get a good impression, I carry out my project with all the
@@ -81,21 +81,23 @@ const Testimonials = () => {
                       className="testimonials__img"
                     />
                     <div>
-                      <h3 className="testimonials name">Sara Smith</h3>
-                      <span className="testimonials__client">Client</span>
+                      <h3 className="testimonials name">
+                        Georgios Vlachogiannis
+                      </h3>
+                      <span className="testimonials__client">Partner</span>
                     </div>
                   </div>
-                  <div>
+                  {/* <div>
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
-                  </div>
+                  </div> */}
                 </div>
                 <p className="testimonials__description">
-                  I get a good impression, I carry out my project with all the
-                  possible quality and attention and support 24 hours a day.
+                  It was great working with Vasilis on our gaming platform. We
+                  truly appreciate his efforts &amp; commitment to the project.
                 </p>
               </div>
             </div>
@@ -111,21 +113,22 @@ const Testimonials = () => {
                       className="testimonials__img"
                     />
                     <div>
-                      <h3 className="testimonials name">Sara Smith</h3>
+                      <h3 className="testimonials name">Simon Romanus</h3>
                       <span className="testimonials__client">Client</span>
                     </div>
                   </div>
-                  <div>
+                  {/* <div>
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
                     <Unicons.UilStar className="testimonials__icon-star" />
-                  </div>
+                  </div> */}
                 </div>
                 <p className="testimonials__description">
-                  I get a good impression, I carry out my project with all the
-                  possible quality and attention and support 24 hours a day.
+                  I assigned Vasilis to redesign my existing site. He created a
+                  fresh, eye-tempting design for my site, user-friendly and
+                  responsive!
                 </p>
               </div>
             </div>

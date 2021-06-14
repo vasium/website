@@ -63,7 +63,7 @@ const Qualifications = () => {
             {/* ---QUALIFICATION 1  --- */}
             <div className="qualifications__data qualifications__data-left">
               <div>
-                <h3 className="qualifications__title">XR Developer</h3>
+                <h3 className="qualifications__title">XR Development</h3>
                 <span className="qualifications__subtitle">Nackademin</span>
                 <div className="qualifications__calendar">
                   <Unicons.UilCalendarAlt className="uil" />
@@ -84,19 +84,6 @@ const Qualifications = () => {
                 <span className="qualifications__rounder"></span>
                 <span className="qualifications__line"></span>
               </div>
-
-              <div>
-                <h3 className="qualifications__title">Multimedia Developer</h3>
-                <span className="qualifications__subtitle">Omiros College</span>
-                <div className="qualifications__calendar">
-                  <Unicons.UilCalendarAlt className="uil" />
-                  2005 - 2007
-                </div>
-              </div>
-            </div>
-
-            {/* ---QUALIFICATION 3  --- */}
-            <div className="qualifications__data qualifications__data-left">
               <div>
                 <h3 className="qualifications__title">
                   Theoretical and Mathematical Physics
@@ -106,9 +93,26 @@ const Qualifications = () => {
                 </span>
                 <div className="qualifications__calendar">
                   <Unicons.UilCalendarAlt className="uil" />
-                  2014 - 201
+                  2014 - 2017
                 </div>
               </div>
+            </div>
+
+            {/* ---QUALIFICATION 3  --- */}
+            <div className="qualifications__data qualifications__data-left">
+              <div>
+                <h3 className="qualifications__title">
+                  Studies in Natural Sciences
+                </h3>
+                <span className="qualifications__subtitle">
+                  Hellenic Open University
+                </span>
+                <div className="qualifications__calendar">
+                  <Unicons.UilCalendarAlt className="uil" />
+                  2007 - 2011
+                </div>
+              </div>
+
               <div>
                 <span className="qualifications__rounder"></span>
                 <span className="qualifications__line"></span>
@@ -126,14 +130,12 @@ const Qualifications = () => {
 
               <div>
                 <h3 className="qualifications__title">
-                  Studies in Natural Sciences
+                  Multimedia Development
                 </h3>
-                <span className="qualifications__subtitle">
-                  Hellenic Open University
-                </span>
+                <span className="qualifications__subtitle">Omiros College</span>
                 <div className="qualifications__calendar">
                   <Unicons.UilCalendarAlt className="uil" />
-                  2007 - 2011
+                  2005 - 2007
                 </div>
               </div>
             </div>
@@ -144,11 +146,13 @@ const Qualifications = () => {
             {/* ---QUALIFICATION 1  --- */}
             <div className="qualifications__data qualifications__data-left">
               <div>
-                <h3 className="qualifications__title">Web Developer</h3>
-                <span className="qualifications__subtitle">Freelancer</span>
+                <h3 className="qualifications__title">VR/AR Developer</h3>
+                <span className="qualifications__subtitle">
+                  Vobling Europe / Studio3D
+                </span>
                 <div className="qualifications__calendar">
                   <Unicons.UilCalendarAlt className="uil" />
-                  2010 - 2018
+                  2020 - 2021
                 </div>
               </div>
               <div>
@@ -167,8 +171,10 @@ const Qualifications = () => {
               </div>
 
               <div>
-                <h3 className="qualifications__title">iOS Developer</h3>
-                <span className="qualifications__subtitle">Freelancer</span>
+                <h3 className="qualifications__title">Web Developer</h3>
+                <span className="qualifications__subtitle">
+                  IT Consultant / Freelancer
+                </span>
                 <div className="qualifications__calendar">
                   <Unicons.UilCalendarAlt className="uil" />
                   2018 - 2020
@@ -179,13 +185,48 @@ const Qualifications = () => {
             {/* ---QUALIFICATION 3  --- */}
             <div className="qualifications__data qualifications__data-left">
               <div>
-                <h3 className="qualifications__title">XR Developer</h3>
+                <h3 className="qualifications__title">iOS Developer</h3>
                 <span className="qualifications__subtitle">
-                  Vobling - Studio 3D
+                  IT Consultant / Freelancer
                 </span>
                 <div className="qualifications__calendar">
                   <Unicons.UilCalendarAlt className="uil" />
-                  2020 - 2021
+                  2014 - 2018
+                </div>
+              </div>
+              <div>
+                <span className="qualifications__rounder"></span>
+                <span className="qualifications__line"></span>
+              </div>
+            </div>
+
+            {/* ---QUALIFICATION 4  --- */}
+            <div className="qualifications__data qualifications__data-right">
+              <div></div>
+
+              <div>
+                <span className="qualifications__rounder"></span>
+                <span className="qualifications__line"></span>
+              </div>
+
+              <div>
+                <h3 className="qualifications__title">Software Engineer</h3>
+                <span className="qualifications__subtitle">FDS SA</span>
+                <div className="qualifications__calendar">
+                  <Unicons.UilCalendarAlt className="uil" />
+                  2010 - 2014
+                </div>
+              </div>
+            </div>
+
+            {/* ---QUALIFICATION 5  --- */}
+            <div className="qualifications__data qualifications__data-left">
+              <div>
+                <h3 className="qualifications__title">Web Designer</h3>
+                <span className="qualifications__subtitle">Ipng Group SA</span>
+                <div className="qualifications__calendar">
+                  <Unicons.UilCalendarAlt className="uil" />
+                  2005 - 2009
                 </div>
               </div>
               <div>

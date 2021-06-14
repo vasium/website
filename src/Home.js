@@ -1,14 +1,56 @@
 import * as Unicons from "@iconscout/react-unicons";
 import prefil from "./images/perfil.png";
 import { Link } from "react-scroll";
+import ReactPlayer from "react-player";
+import video from "./videos/video.mp4";
+import { useEffect, useState } from "react";
+
 const Home = () => {
+  const [isPlaying, setisPlaying] = useState(null);
+  const [modalViews, setModalViews] = useState(null);
+  const [modalBtns, setModalBtns] = useState(null);
+  const [modalCloses, setModalCloses] = useState(null);
+
+  useEffect(() => {
+    setisPlaying(false);
+  }, []);
+
+  useEffect(() => {
+    setModalViews(document.querySelectorAll(".home__modal"));
+    setModalBtns(document.querySelectorAll(".home__button"));
+    setModalCloses(document.querySelectorAll(".home__modal-close"));
+  }, []);
+
+  if (modalViews && modalBtns && modalCloses) {
+    const modal = (modalClick) => {
+      modalViews[modalClick].classList.add("active-modal");
+    };
+
+    modalBtns.forEach((modalBtn, i) => {
+      modalBtn.addEventListener("click", () => {
+        setisPlaying(true);
+
+        modal(i);
+      });
+    });
+
+    modalCloses.forEach((modalClose) => {
+      modalClose.addEventListener("click", () => {
+        setisPlaying(false);
+        modalViews.forEach((modalView) => {
+          modalView.classList.remove("active-modal");
+        });
+      });
+    });
+  }
+
   return (
     <section className="home section" id="home">
       <div className="home__container container grid">
         <div className="home__content grid">
           <div className="home__social">
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/vasilis-zotikas"
               target="blank"
               className="home__social-icon"
             >
@@ -67,17 +109,37 @@ const Home = () => {
               intuitive, dynamic user experiences.
             </p>
             <Link
+              id="showreel_button"
               style={{ cursor: "pointer" }}
-              className="button button--flex"
-              to="section6"
+              className="button button--flex home__button"
+              to={"section1"}
               spy={true}
               smooth={true}
               duration={500}
             >
               {/* <a href="#contact" className="button button--flex"> */}
-              Contact Me <Unicons.UilMessage className="button__icon uil" />
+              Showreel <Unicons.UilVideo className="button__icon " />
               {/* </a> */}
             </Link>
+
+            <div className="home__modal">
+              <div className="home__modal-content">
+                {/* <div className="home__modal-title"></div> */}
+                <div className="player-wrapper">
+                  <ReactPlayer
+                    className="react-player fixed-bottom"
+                    url={video}
+                    width="100%"
+                    height="100%"
+                    controls={true}
+                    playing={isPlaying}
+                    stopOnUnmount={true}
+                  />
+                </div>
+                <Unicons.UilTimes className="home__modal-close" />
+              </div>
+            </div>
+            {/* --Modal-- */}
           </div>
         </div>
 

@@ -36,7 +36,7 @@ const Services = () => {
   return (
     <section className="services section" id="services">
       <h2 className="section__title">Services</h2>
-      <span className="section__subtitle">What i offer</span>
+      <span className="section__subtitle">My solutions</span>
 
       <div className="services__container container grid">
         {/* ---SERVICES 1--- */}
@@ -60,19 +60,23 @@ const Services = () => {
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>I develop the user interface.</p>
+                  <p>HTML &amp; CSS Responsive Web Design</p>
                 </li>
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>Web page development.</p>
+                  <p>UI/UX Design</p>
                 </li>
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>I create ux element interactions.</p>
+                  <p>React JS Development</p>
                 </li>
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>I position your company brand.</p>
+                  <p>Node.js Development</p>
+                </li>
+                <li className="services__modal-service">
+                  <Unicons.UilCheckCircle className="services__modal-icon" />
+                  <p>Javascript Development</p>
                 </li>
               </ul>
             </div>
@@ -83,7 +87,7 @@ const Services = () => {
         {/* ---SERVICES 2--- */}
         <div className="services__content">
           <div>
-            <Unicons.UilArrow className="services__icon" />
+            <Unicons.UilEye className="services__icon" />
             <h3 className="services__title">
               XR <br /> Development{" "}
             </h3>
@@ -101,19 +105,19 @@ const Services = () => {
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>I develop the user interface.</p>
+                  <p>VR/AR App Development</p>
                 </li>
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>Web page development.</p>
+                  <p>Game Development</p>
                 </li>
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>I create ux element interactions.</p>
+                  <p>VR BIM &amp; Architectural Visualization</p>
                 </li>
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>I position your company brand.</p>
+                  <p>ARKit / ARCore App Development</p>
                 </li>
               </ul>
             </div>
@@ -124,9 +128,9 @@ const Services = () => {
         {/* ---SERVICES 3--- */}
         <div className="services__content">
           <div>
-            <Unicons.UilPen className="services__icon" />
+            <Unicons.UilMobileAndroid className="services__icon" />
             <h3 className="services__title">
-              iOS <br /> Development{" "}
+              Mobile App <br /> Development{" "}
             </h3>
           </div>
           <span className="button button--flex button--small button--link services__button">
@@ -136,25 +140,25 @@ const Services = () => {
           <div className="services__modal">
             <div className="services__modal-content">
               <h4 className="services__modal-title">
-                iOS <br /> Development
+                Mobile App <br /> Development
               </h4>
               <Unicons.UilTimes className="services__modal-close" />
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>I develop the user interface.</p>
+                  <p>iOS App Development</p>
                 </li>
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>Web page development.</p>
+                  <p>Android App Development</p>
                 </li>
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>I create ux element interactions.</p>
+                  <p>ARKit / ARCore App Development</p>
                 </li>
                 <li className="services__modal-service">
                   <Unicons.UilCheckCircle className="services__modal-icon" />
-                  <p>I position your company brand.</p>
+                  <p>React Native App Development</p>
                 </li>
               </ul>
             </div>

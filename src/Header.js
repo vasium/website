@@ -40,7 +40,7 @@ const Header = () => {
 
   const [textField, setTextField] = useState("");
 
-  const currentElementIdContent = " Vasilis Zotikas ";
+  const currentElementIdContent = " woqomoqo_beta ";
 
   useEffect(() => {
     var i = 0;

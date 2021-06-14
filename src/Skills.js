@@ -4,31 +4,120 @@ import { useEffect, useState } from "react";
 const Skills = () => {
   const [skillsContent, setskillsContent] = useState(null);
   const [skillsHeader, setskillsHeader] = useState(null);
-
+  // const [skillsClickArea, setskillsClickArea] = useState(null);
   useEffect(() => {
     setskillsContent(document.getElementsByClassName("skills__content"));
     setskillsHeader(document.querySelectorAll(".skills__header"));
   }, []);
 
   const toggleSkills = (e) => {
-    e.preventDefault();
+    // console.log(e.target);
 
-    let itemClass = e.target.parentElement.parentElement.className;
+    if (e.target.className === "skills__title") {
+      let itemClass =
+        e.target.parentElement.parentElement.parentElement.className;
+      for (let i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = "skills__content skills__close";
+      }
 
-    for (let i = 0; i < skillsContent.length; i++) {
-      skillsContent[i].className = "skills__content skills__close";
+      if (itemClass === "skills__content skills__close") {
+        e.target.parentElement.parentElement.parentElement.className =
+          "skills__content skills__open";
+      }
     }
-    if (itemClass === "skills__content skills__close") {
-      e.target.parentElement.parentElement.className =
-        "skills__content skills__open";
+
+    //
+    else if (e.target.className === "skills__subtitle") {
+      let itemClass =
+        e.target.parentElement.parentElement.parentElement.className;
+      for (let i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = "skills__content skills__close";
+      }
+
+      if (itemClass === "skills__content skills__close") {
+        e.target.parentElement.parentElement.parentElement.className =
+          "skills__content skills__open";
+      }
+    }
+
+    //
+    else if (e.target.className === "skills__header") {
+      let itemClass = e.target.parentElement.className;
+      for (let i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = "skills__content skills__close";
+      }
+
+      if (itemClass === "skills__content skills__close") {
+        e.target.parentElement.className = "skills__content skills__open";
+      }
+    }
+
+    //
+    // else if (e.target.className === "skills__icon") {
+    //   console.log("icon");
+
+    //   let itemClass = e.target.parentElement.parentElement.className;
+    //   for (let i = 0; i < skillsContent.length; i++) {
+    //     skillsContent[i].className = "skills__content skills__close";
+    //   }
+
+    //   if (itemClass === "skills__content skills__close") {
+    //     e.target.parentElement.parentElement.className =
+    //       "skills__content skills__open";
+    //   }
+    // }
+
+    // //
+    // else if (e.target.className === "skills__arrow") {
+    //   console.log("arrow");
+    //   let itemClass = e.target.parentElement.parentElement.className;
+    //   for (let i = 0; i < skillsContent.length; i++) {
+    //     skillsContent[i].className = "skills__content skills__close";
+    //   }
+
+    //   if (itemClass === "skills__content skills__close") {
+    //     e.target.parentElement.parentElement.className =
+    //       "skills__content skills__open";
+    //   }
+    // }
+
+    //
+    else {
+      let itemClass = e.target.parentElement.parentElement.className;
+
+      for (let i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = "skills__content skills__close";
+      }
+
+      if (itemClass === "skills__content skills__close") {
+        e.target.parentElement.parentElement.className =
+          "skills__content skills__open";
+      }
     }
   };
 
-  if (skillsContent && skillsHeader) {
-    skillsHeader.forEach((el) => {
-      el.addEventListener("click", toggleSkills);
+  if (skillsHeader) {
+    // console.log(skillsHeader);
+    // const listArray = Array.from(skillsHeader);
+    // listArray.forEach((item) => {
+    //   console.log(item);
+    //   item.addEventListener("click", toggleSkills);
+    // });
+    skillsHeader.forEach((element) => {
+      element.addEventListener("click", toggleSkills);
     });
   }
+
+  // if (skillsClickArea) {
+  //   skillsClickArea.forEach((element) => {
+  //     // for (var i = 0; i < slides.length; i++) {
+  //     console.log(skillsClickArea);
+  //     element.addEventListener("click", toggleSkills);
+  //     // }
+  //     // console.log(element);
+
+  //   });
+  // }
 
   return (
     <section className="skills section" id="skills">
@@ -95,7 +184,7 @@ const Skills = () => {
 
         <div className="skills__content skills__close">
           <div className="skills__header">
-            <Unicons.UilServerNetwork className="skills__icon" />
+            <Unicons.UilEye className="skills__icon" />
             <div>
               <h1 className="skills__title">XR Developer</h1>
               <span className="skills__subtitle">More than 4 years</span>
@@ -106,8 +195,8 @@ const Skills = () => {
           <div className="skills__list grid">
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">HTML</h3>
-                <span className="skills__number">90%</span>
+                <h3 className="skills__name">Unity - Unreal Engine</h3>
+                <span className="skills__number">95%</span>
               </div>
               <div className="skills__bar">
                 <span className="skills__percentage skills__html"></span>
@@ -116,7 +205,7 @@ const Skills = () => {
 
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">CSS</h3>
+                <h3 className="skills__name">C#</h3>
                 <span className="skills__number">80%</span>
               </div>
               <div className="skills__bar">
@@ -126,8 +215,8 @@ const Skills = () => {
 
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">JavaScript</h3>
-                <span className="skills__number">70%</span>
+                <h3 className="skills__name">ARCore - ARKit</h3>
+                <span className="skills__number">75%</span>
               </div>
               <div className="skills__bar">
                 <span className="skills__percentage skills__js"></span>
@@ -136,7 +225,7 @@ const Skills = () => {
 
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">React</h3>
+                <h3 className="skills__name">CAD - BIM - Archviz</h3>
                 <span className="skills__number">85%</span>
               </div>
               <div className="skills__bar">
@@ -150,7 +239,7 @@ const Skills = () => {
 
         <div className="skills__content skills__close">
           <div className="skills__header">
-            <Unicons.UilSwatchbook className="skills__icon" />
+            <Unicons.UilAppleAlt className="skills__icon" />
             <div>
               <h1 className="skills__title">iOS Developer</h1>
               <span className="skills__subtitle">More than 4 years</span>
@@ -161,8 +250,8 @@ const Skills = () => {
           <div className="skills__list grid">
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">HTML</h3>
-                <span className="skills__number">90%</span>
+                <h3 className="skills__name">Swift</h3>
+                <span className="skills__number">80%</span>
               </div>
               <div className="skills__bar">
                 <span className="skills__percentage skills__html"></span>
@@ -171,8 +260,8 @@ const Skills = () => {
 
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">CSS</h3>
-                <span className="skills__number">80%</span>
+                <h3 className="skills__name">Objective-C</h3>
+                <span className="skills__number">60%</span>
               </div>
               <div className="skills__bar">
                 <span className="skills__percentage skills__css"></span>
@@ -181,7 +270,7 @@ const Skills = () => {
 
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">JavaScript</h3>
+                <h3 className="skills__name">UIKit</h3>
                 <span className="skills__number">70%</span>
               </div>
               <div className="skills__bar">
@@ -191,8 +280,63 @@ const Skills = () => {
 
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">React</h3>
-                <span className="skills__number">85%</span>
+                <h3 className="skills__name">React Native</h3>
+                <span className="skills__number">75%</span>
+              </div>
+              <div className="skills__bar">
+                <span className="skills__percentage skills__react"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ---Section 4--- */}
+
+        <div className="skills__content skills__close">
+          <div className="skills__header">
+            <Unicons.UilCube className="skills__icon" />
+            <div>
+              <h1 className="skills__title">UI/ UX - 3D Designer </h1>
+              <span className="skills__subtitle">More than 4 years</span>
+            </div>
+            <Unicons.UilAngleDown className="skills__arrow" />
+          </div>
+
+          <div className="skills__list grid">
+            <div className="skills__data">
+              <div className="skills__titles">
+                <h3 className="skills__name">Adobe Creative Cloud</h3>
+                <span className="skills__number">95%</span>
+              </div>
+              <div className="skills__bar">
+                <span className="skills__percentage skills__html"></span>
+              </div>
+            </div>
+
+            <div className="skills__data">
+              <div className="skills__titles">
+                <h3 className="skills__name">Maya - Blender</h3>
+                <span className="skills__number">80%</span>
+              </div>
+              <div className="skills__bar">
+                <span className="skills__percentage skills__css"></span>
+              </div>
+            </div>
+
+            <div className="skills__data">
+              <div className="skills__titles">
+                <h3 className="skills__name">Figma - Sketch</h3>
+                <span className="skills__number">90%</span>
+              </div>
+              <div className="skills__bar">
+                <span className="skills__percentage skills__js"></span>
+              </div>
+            </div>
+
+            <div className="skills__data">
+              <div className="skills__titles">
+                <h3 className="skills__name">Substance</h3>
+                <span className="skills__number">65%</span>
               </div>
               <div className="skills__bar">
                 <span className="skills__percentage skills__react"></span>

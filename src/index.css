@@ -75,8 +75,8 @@
   border-radius: 50%;
   display: inline-block;
 }
-/* 
-span {
+
+/* span {
   color: var(--text-color);
   font-family: "Zen Dots", cursive;
   margin: 4px;
@@ -90,7 +90,8 @@ span {
 }
 
 .typeing {
-  font-size: 1.2em;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 @keyframes blinker {
@@ -106,7 +107,7 @@ span {
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
+    /* --normal-font-size: 0.9rem; */
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
@@ -403,6 +404,48 @@ img {
 .home__scroll-arrow {
   font-size: 1.25rem;
 }
+
+.home__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.home__modal-content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.home__modal-close {
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+/* Active Modal */
+
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
 /*==================== BUTTONS ====================*/
 .button {
   display: inline-block;
@@ -620,7 +663,7 @@ img {
 .qualifications__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0-5);
 }
 
 .qualifications__calendar {
@@ -1066,6 +1109,9 @@ img {
   .services__modal {
     padding: 0 0.5rem;
   }
+  .home__modal {
+    padding: 0 0.5rem;
+  }
   .project__img {
     width: 200px;
   }
@@ -1223,6 +1269,9 @@ img {
   .services__modal-content {
     width: 450px;
   }
+  /* .home__modal-content {
+    width: 450px;
+  } */
 
   .portfilio__img {
     width: 320px;
