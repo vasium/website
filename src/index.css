@@ -491,7 +491,7 @@ img {
   width: 320px;
   border-radius: 0.5rem;
   justify-self: center;
-  align-self: center;
+  align-self: top;
 }
 .about__description {
   text-align: center;
@@ -811,6 +811,7 @@ img {
   width: 265px;
   border-radius: 0.5rem;
   justify-self: center;
+  /* box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05); */
 }
 
 .portfolio__title {
@@ -1273,11 +1274,14 @@ img {
     width: 450px;
   } */
 
-  .portfilio__img {
-    width: 320px;
+  .portfolio__img {
+    width: 400px;
+    border-radius: 0.5rem;
+    justify-self: center;
   }
+
   .portfolio__content {
-    align-items: center;
+    align-items: top;
   }
   .project {
     text-align: initial;
@@ -1332,11 +1336,22 @@ img {
   .services__container {
     grid-template-columns: repeat(3, 238px);
   }
-  .portfolio__content {
-    column-gap: 5rem;
+
+  /* .portfolio__content {
+    column-gap: 0.5rem;
+  } */
+
+  .portfolio__img {
+    width: 500px;
+    border-radius: 0.5rem;
+    justify-self: center;
   }
 
-  .swiper-button-next::after {
+  /* .portfolio__content {
+    align-items: top;
+  } */
+
+  /* .swiper-button-next::after {
     font-size: 26px !important;
   }
 
@@ -1352,7 +1367,7 @@ img {
   .swiper-button-prev {
     left: -0.4rem !important;
     top: 6rem !important;
-  }
+  } */
 
   .mySwiper {
     padding-bottom: 80px !important;

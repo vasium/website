@@ -48,10 +48,14 @@ const Portfolio = () => {
                   className="portfolio__img"
                 />
                 <div className="portfolio__data">
-                  <h3 className="portfolio__title">Modern Website</h3>
+                  <h3 className="portfolio__title">VR ArchViz Interior</h3>
                   <p className="portfolio__description">
-                    Website adaptable to all devices, with ui components and
-                    animated interactions.
+                    A photorealistic VR experience! The Besqab Apartment
+                    Interior is an architectural visualization project made with
+                    Unity. The Architectural project, build in every single
+                    detail from scratch is a full navigable interior that
+                    includes more than 200 furniture and 4K textures and able to
+                    runs on different platforms, from PC, to VR up to Mobile.
                   </p>
                   <a
                     href="/"
@@ -72,10 +76,16 @@ const Portfolio = () => {
                   className="portfolio__img"
                 />
                 <div className="portfolio__data">
-                  <h3 className="portfolio__title">Modern Website</h3>
+                  <h3 className="portfolio__title">
+                    Web AR 3D model configurator
+                  </h3>
                   <p className="portfolio__description">
-                    Website adaptable to all devices, with ui components and
-                    animated interactions.
+                    A Web-Based 3D React Application that utilizes Three.js, a
+                    JavaScript 3D Library based on WebGL. With the Studio3Dmodel
+                    configurator, you can dynamically change all the properties
+                    of any 3D model and then place it in the real-world
+                    environment using ARKit and ARCore directly out of your
+                    phone's web browser.
                   </p>
                   <a
                     href="/"
@@ -96,10 +106,13 @@ const Portfolio = () => {
                   className="portfolio__img"
                 />
                 <div className="portfolio__data">
-                  <h3 className="portfolio__title">Modern Website</h3>
+                  <h3 className="portfolio__title">Fav8 iOS App</h3>
                   <p className="portfolio__description">
-                    Website adaptable to all devices, with ui components and
-                    animated interactions.
+                    A custom iOS app that I designed and developed my self in
+                    Xcode using Swift.Listen to your favorite radio stations
+                    everywhere! Tune in to music stations, news stations, sports
+                    stations and many other free radio stations of your choice.
+                    Tune in and... Enjoy listening!
                   </p>
                   <a
                     href="/"
