@@ -35,63 +35,57 @@ const Contact = () => {
           </div>
         </div>
 
-        <form name="contact" method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label htmlFor="name">Name</label> <br />
-            <input type="text" id="name" name="name" required />
-          </p>
-          <p>
-            <label htmlFor="email">Email</label> <br />
-            <input type="email" id="email" name="email" required />
-          </p>
-          <p>
-            <label htmlFor="message">Message</label> <br />
-            <textarea id="message" name="message" required></textarea>
-          </p>
-          <p>
-            <input type="submit" value="Submit message" />
-          </p>
-        </form>
-
-        {/* <form
-          action=""
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          className="contact__form grid"
-        >
+        <form name="contact" method="post" className="contact__form grid">
           <input type="hidden" name="form-name" value="contact" />
 
           <div className="contact__inputs grid">
             <div className="contact__content">
-              <label htmlFor="" className="contact__label">
+              <label htmlFor="name" className="contact__label">
                 Name
               </label>
-              <input type="text" className="contact__input" name="name" />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                className="contact__input"
+              />
             </div>
 
             <div className="contact__content">
-              <label htmlFor="" className="contact__label">
+              <label htmlFor="email" className="contact__label">
                 Email
               </label>
-              <input type="email" className="contact__input" name="email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                className="contact__input"
+              />
             </div>
           </div>
           <div className="contact__content">
-            <label htmlFor="" className="contact__label">
+            <label htmlFor="title" className="contact__label">
               Title
             </label>
-            <input type="text" className="contact__input" name="title" />
+            <input
+              type="text"
+              id="name"
+              name="title"
+              required
+              className="contact__input"
+            />
           </div>
 
           <div className="contact__content">
-            <label htmlFor="" className="contact__label">
+            <label htmlFor="message" className="contact__label">
               Message
             </label>
             <textarea
+              id="message"
               name="message"
-              id=""
+              required
               cols="0"
               rows="7"
               className="contact__input"
@@ -104,7 +98,7 @@ const Contact = () => {
               <Unicons.UilMessage className="button__icon" />
             </button>
           </div>
-        </form> */}
+        </form>
       </div>
     </section>
   );
