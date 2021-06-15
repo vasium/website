@@ -39,7 +39,7 @@ const Contact = () => {
           action="#"
           name="contact"
           method="POST"
-          data-netlify="true"
+          dataNetlify="true"
           className="contact__form grid"
         >
           <input type="hidden" name="form-name" value="contact" />
