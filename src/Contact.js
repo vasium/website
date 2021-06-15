@@ -42,26 +42,28 @@ const Contact = () => {
           data-netlify="true"
           className="contact__form grid"
         >
+          <input type="hidden" name="form-name" value="contact" />
+
           <div className="contact__inputs grid">
             <div className="contact__content">
               <label htmlFor="" className="contact__label">
                 Name
               </label>
-              <input type="text" className="contact__input" />
+              <input type="text" className="contact__input" name="name" />
             </div>
 
             <div className="contact__content">
               <label htmlFor="" className="contact__label">
                 Email
               </label>
-              <input type="email" className="contact__input" />
+              <input type="email" className="contact__input" name="email" />
             </div>
           </div>
           <div className="contact__content">
             <label htmlFor="" className="contact__label">
-              Project
+              Title
             </label>
-            <input type="text" className="contact__input" />
+            <input type="text" className="contact__input" name="title" />
           </div>
 
           <div className="contact__content">
@@ -69,7 +71,7 @@ const Contact = () => {
               Message
             </label>
             <textarea
-              name=""
+              name="message"
               id=""
               cols="0"
               rows="7"
