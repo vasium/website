@@ -38,14 +38,28 @@ const Contact = () => {
         <form
           name="contact"
           method="POST"
-          dataNetlify="true"
           data-netlify="true"
-          className="contact__form grid"
+          // className="contact__form grid"
           onSubmit="submit"
         >
           <input type="hidden" name="form-name" value="contact" />
+          <div>
+            <label>
+              Name
+              <input type="text" name="name" />
+            </label>
+          </div>
 
-          <div className="contact__inputs grid">
+          <div>
+            <label htmlFor="email">
+              Email
+              <input id="email" type="email" name="email" />
+            </label>
+          </div>
+
+          <button type="submit">GO</button>
+
+          {/* <div className="contact__inputs grid">
             <div className="contact__content">
               <label htmlFor="" className="contact__label">
                 Name
@@ -85,7 +99,7 @@ const Contact = () => {
               Send Message
               <Unicons.UilMessage className="button__icon" />
             </button>
-          </div>
+          </div> */}
         </form>
       </div>
     </section>
