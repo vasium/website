@@ -77,10 +77,10 @@ const Contact = () => {
           </div>
 
           <div>
-            <a href="/" className="button button--flex">
+            <button type="submit" className="button button--flex">
               Send Message
               <Unicons.UilMessage className="button__icon" />
-            </a>
+            </button>
           </div>
         </form>
       </div>
