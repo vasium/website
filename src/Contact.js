@@ -55,37 +55,15 @@ const Contact = () => {
         </form>
 
         {/* <form
-          name="contact v2"
+          action=""
+          name="contact"
           method="POST"
           data-netlify="true"
-          // className="contact__form grid"
-          onSubmit="submit"
-          data-netlify-honeypot="bot-field"
-          // action=''
+          className="contact__form grid"
         >
-          <input type="hidden" name="form-name" value="contact v2" />
+          <input type="hidden" name="form-name" value="contact" />
 
-          <div hiddden>
-            <input name="bot-field" />
-          </div>
-
-          <div>
-            <label>
-              Name
-              <input type="text" name="first-name" />
-            </label>
-          </div>
-
-          <div>
-            <label htmlFor="email">
-              Email
-              <input id="email" type="email" name="email" />
-            </label>
-          </div>
-
-          <button type="submit">GO</button> */}
-
-        {/* <div className="contact__inputs grid">
+          <div className="contact__inputs grid">
             <div className="contact__content">
               <label htmlFor="" className="contact__label">
                 Name
@@ -125,8 +103,8 @@ const Contact = () => {
               Send Message
               <Unicons.UilMessage className="button__icon" />
             </button>
-          </div> */}
-        {/* </form> */}
+          </div>
+        </form> */}
       </div>
     </section>
   );
