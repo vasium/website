@@ -35,7 +35,12 @@ const Contact = () => {
           </div>
         </div>
 
-        <form action="" data-netlify="true" className="contact__form grid">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className="contact__form grid"
+        >
           <div className="contact__inputs grid">
             <div className="contact__content">
               <label htmlFor="" className="contact__label">
