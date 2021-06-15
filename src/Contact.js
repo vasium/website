@@ -35,7 +35,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form action="" className="contact__form grid">
+        <form action="" data-netlify="true" className="contact__form grid">
           <div className="contact__inputs grid">
             <div className="contact__content">
               <label htmlFor="" className="contact__label">
