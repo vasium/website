@@ -14,7 +14,8 @@ const Services = () => {
 
   if (modalViews && modalBtns && modalCloses) {
     const modal = (modalClick) => {
-      console.log(modalViews[modalClick]);
+      console.log([modalClick]);
+      console.log(modalViews[modalClick].classList);
       modalViews[modalClick].classList.add("active-modal");
     };
 

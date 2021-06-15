@@ -13,6 +13,7 @@ import Services from "./Services";
 import Skills from "./Skills";
 import Testimonials from "./Testimonials";
 import styled from "styled-components";
+// import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 const SectionStyled = styled.div``;
 
@@ -60,7 +61,11 @@ function App() {
   window.addEventListener("scroll", scrollHeader);
   return (
     <>
+      {/* <Router>
+        <Switch>
+          <Route path="/" exact> */}
       <Header />
+
       <Main>
         <SectionStyled id="section1">
           <Home />
@@ -94,6 +99,10 @@ function App() {
       </Main>
       <Footer />
       <Scroll />
+      {/* </Route>
+          <Route path="/about" component={About} />
+        </Switch>
+      </Router> */}
     </>
   );
 }

@@ -4,7 +4,7 @@ import portfolio2 from "./images/portfolio2.jpg";
 import portfolio3 from "./images/portfolio3.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { Link } from "react-scroll";
-// import ReactPlayer from "react-player";
+import ReactPlayer from "react-player";
 // import video from "./videos/video.m4v";
 import { useEffect, useState } from "react";
 
@@ -37,8 +37,7 @@ const Portfolio = () => {
 
   if (modalViews && modalBtns && modalCloses) {
     const modal = (modalClick) => {
-      console.log([modalClick]);
-      console.log(modalViews[modalClick].classList);
+      console.log(modalViews[modalClick]);
       modalViews[modalClick].classList.add("active-modal");
     };
 
@@ -63,147 +62,6 @@ const Portfolio = () => {
       <span className="section__subtitle">My Projects</span>
 
       <div className="portfolio__container container">
-        {/* modal1--- */}
-        <div className="portfolio__modal">
-          <div className="portfolio__modal-content">
-            <h4 className="portfolio__modal-header">VR ArchViz Interior</h4>
-            <Unicons.UilTimes className="portfolio__modal-close" />
-            <ul className="portfolio__modal-services grid">
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilCalendarAlt className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Date: </span>{" "}
-                  January, 2021
-                </p>
-              </li>
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilSubject className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Category: </span> VR
-                  Application
-                </p>
-              </li>
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilShoppingCart className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Client: </span>{" "}
-                  Besqab
-                </p>
-              </li>
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilDesktop className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Technologies: </span>
-                  Unity, Steam VR, Maya, Blender, 3D Studio, Substance, AutoCAD
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        {/* ---modal1 */}
-        {/* modal2--- */}
-        <div className="portfolio__modal">
-          <div className="portfolio__modal-content">
-            <h4 className="portfolio__modal-header">
-              Web AR 3D model configurator
-            </h4>
-            <Unicons.UilTimes className="portfolio__modal-close" />
-            <ul className="portfolio__modal-services grid">
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilCalendarAlt className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Date: </span>{" "}
-                  November, 2020
-                </p>
-              </li>
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilSubject className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Category: </span>{" "}
-                  React Application
-                </p>
-              </li>
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilShoppingCart className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Client: </span>{" "}
-                  Studio 3D
-                </p>
-              </li>
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilDesktop className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Technologies: </span>{" "}
-                  React, Three.js, Firebase, ARKit, ARCore, Google Model Viewer,
-                  WebGL
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        {/* ---modal2 */}
-        {/* modal3--- */}
-        <div className="portfolio__modal">
-          <div className="portfolio__modal-content">
-            <h4 className="portfolio__modal-header">Fav8 iOS App</h4>
-            <Unicons.UilTimes className="portfolio__modal-close" />
-            <ul className="portfolio__modal-services grid">
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilCalendarAlt className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Date: </span> August,
-                  2020
-                </p>
-              </li>
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilSubject className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Category: </span> iOS
-                  Applications
-                </p>
-              </li>
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilShoppingCart className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Client: </span>{" "}
-                  Woqomoqo
-                </p>
-              </li>
-              <li className="portfolio__modal-portfolio">
-                <div>
-                  <Unicons.UilDesktop className="uil__portfolio" />
-                </div>
-                <p>
-                  <span className="portfolio__modal-title">Technologies: </span>{" "}
-                  Xcode, Swift, Firebase, React Native, Radio Directory API
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        {/* ---modal3 */}
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
@@ -211,7 +69,9 @@ const Portfolio = () => {
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
+          mousewheel={true}
           keyboard={true}
+          loop={true}
           className="mySwiper"
         >
           <div>
@@ -267,7 +127,32 @@ const Portfolio = () => {
                     View More
                     <Unicons.UilArrowRight className="button__icon" />
                   </span>
-
+                  <div className="portfolio__modal">
+                    <div className="portfolio__modal-content">
+                      <h4 className="portfolio__modal-title">
+                        Mobile App <br /> Development
+                      </h4>
+                      <Unicons.UilTimes className="portfolio__modal-close" />
+                      <ul className="portfolio__modal-services grid">
+                        <li className="portfolio__modal-details">
+                          <Unicons.UilCheckCircle className="portfolio__modal-icon" />
+                          <p>iOS App Development</p>
+                        </li>
+                        <li className="portfolio__modal-details">
+                          <Unicons.UilCheckCircle className="portfolio__modal-icon" />
+                          <p>Android App Development</p>
+                        </li>
+                        <li className="portfolio__modal-details">
+                          <Unicons.UilCheckCircle className="portfolio__modal-icon" />
+                          <p>ARKit / ARCore App Development</p>
+                        </li>
+                        <li className="portfolio__modal-details">
+                          <Unicons.UilCheckCircle className="portfolio__modal-icon" />
+                          <p>React Native App Development</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                   {/* --- */}
                 </div>
               </div>
@@ -292,10 +177,13 @@ const Portfolio = () => {
                     environment using ARKit and ARCore directly out of your
                     phone's web browser.
                   </p>
-                  <span className="button button--flex button--small button--link portfolio__button">
-                    View More
+                  <a
+                    href="/"
+                    className="button button--flex button--small portfolio__button"
+                  >
+                    Demo
                     <Unicons.UilArrowRight className="button__icon" />
-                  </span>
+                  </a>
                 </div>
               </div>
             </SwiperSlide>
@@ -316,10 +204,13 @@ const Portfolio = () => {
                     stations and many other free radio stations of your choice.
                     Tune in and... Enjoy listening!
                   </p>
-                  <span className="button button--flex button--small button--link portfolio__button">
-                    View More
+                  <a
+                    href="/"
+                    className="button button--flex button--small portfolio__button"
+                  >
+                    Demo
                     <Unicons.UilArrowRight className="button__icon" />
-                  </span>
+                  </a>
                 </div>
               </div>
             </SwiperSlide>

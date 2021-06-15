@@ -16,9 +16,9 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    setModalViews(document.querySelectorAll(".home__modal"));
-    setModalBtns(document.querySelectorAll(".home__button"));
-    setModalCloses(document.querySelectorAll(".home__modal-close"));
+    setModalViews(document.querySelectorAll(".video__modal"));
+    setModalBtns(document.querySelectorAll(".video__button"));
+    setModalCloses(document.querySelectorAll(".video__modal-close"));
   }, []);
 
   if (modalViews && modalBtns && modalCloses) {
@@ -108,23 +108,21 @@ const Home = () => {
               I'm a Web, XR &amp; iOS developer passionate about creating
               intuitive, dynamic user experiences.
             </p>
+            {/* --Modal Section start-- */}
             <Link
               id="showreel_button"
               style={{ cursor: "pointer" }}
-              className="button button--flex home__button"
+              className="button button--flex video__button"
               to={"section1"}
               spy={true}
               smooth={true}
               duration={500}
             >
-              {/* <a href="#contact" className="button button--flex"> */}
               Showreel <Unicons.UilVideo className="button__icon " />
-              {/* </a> */}
             </Link>
 
-            <div className="home__modal">
-              <div className="home__modal-content">
-                {/* <div className="home__modal-title"></div> */}
+            <div className="video__modal">
+              <div className="video__modal-content">
                 <div className="player-wrapper">
                   <ReactPlayer
                     className="react-player fixed-bottom"
@@ -136,10 +134,10 @@ const Home = () => {
                     stopOnUnmount={true}
                   />
                 </div>
-                <Unicons.UilTimes className="home__modal-close" />
+                <Unicons.UilTimes className="video__modal-close" />
               </div>
             </div>
-            {/* --Modal-- */}
+            {/* --Modal Section End-- */}
           </div>
         </div>
 
