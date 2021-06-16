@@ -41,7 +41,10 @@ const About = () => {
           </div>
           <div className="about__button">
             <a
-              download=""
+
+href={cv} download="My_File.pdf"
+
+              
               href={cv}
               className="button button--flex"
             >
