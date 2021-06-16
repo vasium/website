@@ -42,10 +42,10 @@ const About = () => {
           <div className="about__button">
             <a
 
-href={cv} download="CV.pdf"
+href={cv} download
 
               
-              href={cv}
+              
               className="button button--flex"
             >
               Download CV
