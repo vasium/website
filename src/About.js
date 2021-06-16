@@ -42,7 +42,7 @@ const About = () => {
           <div className="about__button">
             <a
 
-href={cv} download
+href={cv} download target="_blank"
 
               
               
