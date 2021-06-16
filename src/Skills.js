@@ -296,7 +296,7 @@ const Skills = () => {
           <div className="skills__header">
             <Unicons.UilCube className="skills__icon" />
             <div>
-              <h1 className="skills__title">UI/ UX - 3D Designer </h1>
+              <h1 className="skills__title">UI / UX - 3D Designer </h1>
               <span className="skills__subtitle">More than 4 years</span>
             </div>
             <Unicons.UilAngleDown className="skills__arrow" />
