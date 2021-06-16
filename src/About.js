@@ -42,7 +42,7 @@ const About = () => {
           <div className="about__button">
             <a
               download=""
-              href="images/CV.jpeg"
+              href="cv/Vasilis_Zotikas_CV_2021.pdf"
               className="button button--flex"
             >
               Download CV

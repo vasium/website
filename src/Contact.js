@@ -66,8 +66,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact__content">
-            <label htmlFor="title" className="contact__label">
-              Title
+            <label htmlFor="subject" className="contact__label">
+              Subject
             </label>
             <input
               type="text"
