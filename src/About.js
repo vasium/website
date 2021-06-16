@@ -1,6 +1,6 @@
 import about from "./images/about.jpg";
 import * as Unicons from "@iconscout/react-unicons";
-import cv from "./cv/cv/Vasilis_Zotikas_CV_2021.pdf";
+import cv from "./cv/Vasilis_Zotikas_CV_2021.pdf";
 const About = () => {
   return (
     <section className="about section" id="about">
@@ -42,7 +42,7 @@ const About = () => {
           <div className="about__button">
             <a
 
-href={cv} download="My_File.pdf"
+href={cv} download="CV.pdf"
 
               
               href={cv}
