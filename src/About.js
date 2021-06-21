@@ -41,11 +41,10 @@ const About = () => {
           </div>
           <div className="about__button">
             <a
-
-href={cv} download target="_blank"
-
-              
-              
+              rel="noreferrer"
+              href={cv}
+              download
+              target="_blank"
               className="button button--flex"
             >
               Download CV
