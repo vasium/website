@@ -9,9 +9,7 @@ const Project = () => {
         <div className="project__container container grid">
           <div className="project__data">
             <h2 className="project__title">Do you have a project?</h2>
-            <p className="project__description">
-              Contact me now and get 25% discount!
-            </p>
+            <p className="project__description">Feel free to contact me!</p>
             <Link
               className="button button--flex button--white"
               style={{ cursor: "pointer" }}
